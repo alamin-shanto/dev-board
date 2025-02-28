@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- added daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- added tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1c10f566c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="max-w-[1440px] mx-auto mt-5">
+    <!-- header section starts here -->
+    <header class="flex justify-between bg-white py-7 px-6">
+      <div class="header-div1 flex gap-5">
+        <img src="./assets/logo.png" alt="" />
+        <p class="text-4xl text-black">
+          Dev<span class="font-bold">Board</span>
+        </p>
+      </div>
+      <div class="header-div2 flex gap-10">
+        <p class="font-bold text-3xl text-black flex gap-2 text-center">
+          <i
+            class="fa-sharp fa-solid fa-square-check"
+            style="color: #3752fd"
+          ></i>
+          <span>23</span>
+        </p>
+        <img src="./assets/theme-btn.png" alt="" />
+      </div>
+    </header>
+
+    <!-- header section ends here -->
+
+    <main class="mt-5 bg-white">
+      <div class="w-3/4">
+        <div class="flex justify-evenly">
+          <!-- box1 starts here -->
+          <div class="flex align-center bg-[#F4F7FF] w-1/4">
+            <div class="text-3xl">
+              <i
+                class="fa-sharp fa-solid fa-square-check"
+                style="color: #3752fd"
+              ></i>
+            </div>
+            <div class="text-black">
+              <p class="text-base font-medium">Task Assigned</p>
+              <p class="text-3xl font-bold">05</p>
+            </div>
+          </div>
+          <!-- box1 ends here -->
+          <!-- box2 starts here -->
+
+          <div class="w-2/4 bg-linear-to-r from-red-700 to-blue-300">
+            <img src="./assets/board.png" alt="" />
+            <p>Discover Something New Today!</p>
+          </div>
+          <!-- box2 ends here -->
+          <!-- box3 starts here -->
+          <div class="w-1/4"></div>
+
+          <!-- box3 ends here -->
+        </div>
+        <div></div>
+      </div>
+
+      <div class="w-1/4"></div>
+    </main>
+
+    <script src="./script/main.js"></script>
+  </body>
+</html>
