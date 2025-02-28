@@ -21,9 +21,11 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="max-w-[1440px] mx-auto mt-5">
+  <body class="p-6">
     <!-- header section starts here -->
-    <header class="flex justify-between bg-white py-7 px-6">
+    <header
+      class="max-w-[1440px] mx-auto flex justify-between bg-white py-7 px-6 items-center"
+    >
       <div class="header-div1 flex gap-5">
         <img src="./assets/logo.png" alt="" />
         <p class="text-4xl text-black">
@@ -31,52 +33,243 @@
         </p>
       </div>
       <div class="header-div2 flex gap-10">
-        <p class="font-bold text-3xl text-black flex gap-2 text-center">
+        <p
+          class="font-bold text-3xl text-black flex justify-center gap-6 items-center bg-[#F4F7FF] border rounded-full p-3"
+        >
           <i
             class="fa-sharp fa-solid fa-square-check"
             style="color: #3752fd"
           ></i>
           <span>23</span>
         </p>
-        <img src="./assets/theme-btn.png" alt="" />
+        <div class="bg-[#F4F7FF] border rounded-full p-3">
+          <img src="./assets/theme-btn.png" alt="" onclick="changeBgColor()" />
+        </div>
       </div>
     </header>
 
     <!-- header section ends here -->
 
-    <main class="mt-5 bg-white">
-      <div class="w-3/4">
-        <div class="flex justify-evenly">
-          <!-- box1 starts here -->
-          <div class="flex align-center bg-[#F4F7FF] w-1/4">
-            <div class="text-3xl">
-              <i
-                class="fa-sharp fa-solid fa-square-check"
-                style="color: #3752fd"
-              ></i>
+    <main class="max-w-[1440px] mx-auto mt-5">
+      <!-- parent div -->
+      <div class="flex gap-6 w-full">
+        <!-- left div -->
+
+        <div class="p-6 bg-white flex-[3]">
+          <!-- top div -->
+          <div class="flex justify-evenly gap-6">
+            <!-- box1 starts here -->
+            <div
+              class="flex items-center gap-5 bg-[#F4F7FF] p-6 max-w-[350px] flex-[1] justify-center"
+            >
+              <div class="text-3xl">
+                <i
+                  class="fa-sharp fa-solid fa-square-check"
+                  style="color: #3752fd"
+                ></i>
+              </div>
+              <div class="text-black">
+                <p class="text-base font-medium">Task Assigned</p>
+                <p class="text-3xl font-bold">05</p>
+              </div>
             </div>
-            <div class="text-black">
-              <p class="text-base font-medium">Task Assigned</p>
-              <p class="text-3xl font-bold">05</p>
+            <!-- box1 ends here -->
+            <!-- box2 starts here -->
+
+            <div
+              class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-6 max-w-[700px] flex-[2]"
+            >
+              <img src="./assets/board.png" alt="" />
+              <p class="text-white font-medium text-2xl">
+                Discover Something <br />
+                New Today!
+              </p>
+            </div>
+            <!-- box2 ends here -->
+            <!-- box3 starts here -->
+            <div
+              class="flex items-center gap-5 bg-[#F4F7FF] p-6 max-w-[350px] flex-[1] justify-center"
+            >
+              <div class="">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+              <div class="text-black">
+                <p id="week_day" class="text-2xl font-medium"></p>
+                <p id="date" class="text-2xl font-bold"></p>
+              </div>
+            </div>
+
+            <!-- box3 ends here -->
+          </div>
+
+          <!-- bottom (grid) div -->
+          <div class="grid grid-cols-3 mt-16 gap-9">
+            <!-- card1 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card4 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card5 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- card6 -->
+            <div class="bg-[#F4F7FF] p-6 space-y-4">
+              <div class="text-[#00303C] space-y-4">
+                <p class="text-base bg-white p-2">ShopEase</p>
+                <h4 class="font-medium text-2xl text-[#00303C]">
+                  Fix Mobile Button Issue
+                </h4>
+                <p class="text-base text-black bg-white p-2">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+              <div class="flex justify-between gap-5">
+                <div class="text-[#00303C]">
+                  <p class="text-sm">Deadline</p>
+                  <h6 class="font-medium text-base">21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="btn bg-[#3752FD] text-white border-none">
+                    Completed
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- box1 ends here -->
-          <!-- box2 starts here -->
-
-          <div class="w-2/4 bg-linear-to-r from-red-700 to-blue-300">
-            <img src="./assets/board.png" alt="" />
-            <p>Discover Something New Today!</p>
-          </div>
-          <!-- box2 ends here -->
-          <!-- box3 starts here -->
-          <div class="w-1/4"></div>
-
-          <!-- box3 ends here -->
         </div>
-        <div></div>
-      </div>
+        <!-- right div -->
 
-      <div class="w-1/4"></div>
+        <div class="bg-white flex-[1] p-6">
+          <div class="font-medium text-xl flex justify-center gap-4">
+            <img src="./assets/activity.png" alt="" />
+            <p class="text-black">Activity Log</p>
+          </div>
+          <div class="text-center">
+            <button class="btn border-none text-white bg-[#3752FD] mt-5">
+              Clear History
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="./script/main.js"></script>
