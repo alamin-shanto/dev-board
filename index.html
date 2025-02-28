@@ -40,7 +40,7 @@
             class="fa-sharp fa-solid fa-square-check"
             style="color: #3752fd"
           ></i>
-          <span>23</span>
+          <span id="addCount">23</span>
         </p>
         <div class="bg-[#F4F7FF] border rounded-full p-3">
           <img src="./assets/theme-btn.png" alt="" onclick="changeBgColor()" />
@@ -70,7 +70,7 @@
               </div>
               <div class="text-black">
                 <p class="text-base font-medium">Task Assigned</p>
-                <p class="text-3xl font-bold">05</p>
+                <p class="text-3xl font-bold" id="subCount">06</p>
               </div>
             </div>
             <!-- box1 ends here -->
@@ -112,9 +112,10 @@
                   Fix Mobile Button Issue
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Identify layout problems, adjust responsive design, and
+                  optimize touch interactions. Ensure elements scale properly,
+                  improve readability, and fix navigation for a seamless mobile
+                  user experience.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -123,7 +124,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
@@ -132,14 +136,15 @@
             <!-- card2 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4">
               <div class="text-[#00303C] space-y-4">
-                <p class="text-base bg-white p-2">ShopEase</p>
+                <p class="text-base bg-white p-2">CloudSync</p>
                 <h4 class="font-medium text-2xl text-[#00303C]">
-                  Fix Mobile Button Issue
+                  Add Dark Mode
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Implement a theme toggle to switch between light and dark
+                  modes. <br />
+                  Adjust colors, backgrounds, and text for better readability,
+                  ensuring a smooth and user-friendly experience.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -148,7 +153,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
@@ -157,14 +165,15 @@
             <!-- card3 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4">
               <div class="text-[#00303C] space-y-4">
-                <p class="text-base bg-white p-2">ShopEase</p>
+                <p class="text-base bg-white p-2">SwiftPay</p>
                 <h4 class="font-medium text-2xl text-[#00303C]">
-                  Fix Mobile Button Issue
+                  Optimize Home page
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Enhance loading speed, improve layout responsiveness, and
+                  streamline content. Optimize images, reduce unnecessary
+                  scripts, and refine navigation for a faster, more
+                  user-friendly browsing experience.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -173,7 +182,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
@@ -182,14 +194,15 @@
             <!-- card4 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4">
               <div class="text-[#00303C] space-y-4">
-                <p class="text-base bg-white p-2">ShopEase</p>
+                <p class="text-base bg-white p-2">Meta</p>
                 <h4 class="font-medium text-2xl text-[#00303C]">
-                  Fix Mobile Button Issue
+                  Add new emoji 🤲
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Integrate fresh emojis to enhance user engagement. <br />
+                  Ensure proper rendering across devices, <br />optimize for
+                  accessibility, and seamlessly update the emoji library for a
+                  fun experience.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -198,7 +211,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
@@ -207,14 +223,15 @@
             <!-- card5 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4">
               <div class="text-[#00303C] space-y-4">
-                <p class="text-base bg-white p-2">ShopEase</p>
+                <p class="text-base bg-white p-2">Google LLC</p>
                 <h4 class="font-medium text-2xl text-[#00303C]">
-                  Fix Mobile Button Issue
+                  Integrate OpenAI API
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Connect to OpenAI's API for AI-powered features. Enable
+                  chatbots, text generation, and automation. Optimize requests,
+                  handle responses efficiently, and enhance user experience with
+                  intelligent interactions.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -223,7 +240,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
@@ -232,14 +252,15 @@
             <!-- card6 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4">
               <div class="text-[#00303C] space-y-4">
-                <p class="text-base bg-white p-2">ShopEase</p>
+                <p class="text-base bg-white p-2">Glassdoar</p>
                 <h4 class="font-medium text-2xl text-[#00303C]">
-                  Fix Mobile Button Issue
+                  Improve Job searching
                 </h4>
                 <p class="text-base text-black bg-white p-2">
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly and ensure onClick works
-                  properly
+                  Enhance filters, refine search algorithms, and optimize
+                  listings. Improve UI, <br />
+                  add real-time updates, <br />and ensure a seamless experience
+                  for faster, more relevant job matches.
                 </p>
               </div>
               <div class="flex justify-between gap-5">
@@ -248,7 +269,10 @@
                   <h6 class="font-medium text-base">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="btn bg-[#3752FD] text-white border-none">
+                  <button
+                    onclick="updateCount(event)"
+                    class="btn bg-[#3752FD] text-white border-none"
+                  >
                     Completed
                   </button>
                 </div>
