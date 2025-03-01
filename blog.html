@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- added daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- added tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/1c10f566c3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="p-6 bg-[#F4F7FF]">
+    <header
+      class="max-w-[1440px] mx-auto flex justify-between bg-white py-7 px-6 items-center"
+    >
+      <div class="header-div1 flex gap-5">
+        <img src="./assets/logo.png" alt="" />
+        <p class="text-4xl text-black">
+          Dev<span class="font-bold">Board</span>
+        </p>
+      </div>
+      <div class="header-div2 gap-10">
+        <button
+          class="btn bg-[#3752fd] text-white border-none"
+          onclick="window.location.href='./index.html' "
+        >
+          Back to Desk
+        </button>
+      </div>
+    </header>
+    <main class="max-w-[1440px] mx-auto space-y-5">
+      <h2 class="font-bold text-center text-3xl my-7 text-black">Blogs</h2>
+      <!-- question 1 -->
+      <div class="text-lg text-black bg-white p-5 space-y-5">
+        <p class="font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </p>
+        <hr />
+        <div>
+          <p>
+            There are several ways to select an element in the DOM using
+            Javascript. Here are some of the methods: getElementById(),
+            getElementsByTagName(), getElementsByclassName(),
+            getElementsByName(), querySelector(), querySelectorAll()
+          </p>
+        </div>
+      </div>
+      <!-- question 2 -->
+      <div class="text-lg text-black bg-white p-5 space-y-5">
+        <p class="font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent?
+        </p>
+        <hr />
+        <div>
+          <p>
+            <b>innerHTML : </b> This property represents the HTML content inside
+            an element as a string, including all HTML tags. It is used when
+            need to retrive or set both text and HTML content.
+          </p>
+          <p>
+            <b>innerText : </b> This property returns or sets the "rendered"
+            text content of an element, excluding any HTML tags. It is used when
+            need to retrieve or set visible text in an element but ignore any
+            HTML tags or hidden content.
+          </p>
+          <p>
+            <b>textContent : </b> This property returns or sets the text content
+            of an element, including all the texts in its child nodes but
+            without any HTML tags. Its used when need to get or set the raw text
+            content and ignore styling or hidden content.
+          </p>
+        </div>
+      </div>
+      <!-- question 3 -->
+      <div class="text-lg text-black bg-white p-5 space-y-5">
+        <p class="font-bold">
+          Question-3: What is event delegation in the DOM?
+        </p>
+        <hr />
+        <div>
+          <p>
+            Event delegation is a technique in Javascript for handling events in
+            a more efficient and flexible way by taking advantage of the event
+            bubbling mechanism in the DOM. <br />
+            Event delegation works by event bubbling, event listener on parent &
+            determining the target.
+          </p>
+        </div>
+      </div>
+      <!-- question 4 -->
+      <div class="text-lg text-black bg-white p-5 space-y-5">
+        <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+        <hr />
+        <div>
+          <p>
+            Event bubbling is a concept in the DOM where an event that is
+            triggered on an element will "bubble up" through its ancestors in
+            the DOM tree, from the target element to the root of the document.
+            <br />
+            This process allows event listeners on parent elements to also catch
+            and handle events triggered on child elements.
+          </p>
+        </div>
+      </div>
+      <!-- question 5 -->
+      <div class="text-lg text-black bg-white p-5 space-y-5">
+        <p class="font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </p>
+        <hr />
+        <div>
+          <p>
+            <b>Create an element :</b> To create new HTML elements, need to use
+            document.createElement()
+          </p>
+          <p>
+            <b>Adding an Element :</b> to add the newly created element to the
+            DOM, need to append it to an existing element. Append using
+            parentElement.appendChild()
+          </p>
+          <p>
+            <b>Removing an Element :</b> to remove an element from the DOM, need
+            to use removeChild() or remove()
+          </p>
+          <p>
+            <b>Adding Text or HTML content :</b> need to use innerText or
+            innerHTML, to add text or HTML content to an element.
+            <b>innerText</b> adds plain text. On the otherhand,
+            <b>innerHTML</b> adds HTML content.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

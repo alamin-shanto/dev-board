@@ -54,7 +54,7 @@ function updateCount(event) {
 
   document.getElementById(
     "activityLog"
-  ).innerHTML += `<p class="my-2"> You have completed the task <b> ${cardTitle} </b> at ${time} </p>`;
+  ).innerHTML += `<p class="my-3"> You have completed the task <b> ${cardTitle} </b> at ${time} </p>`;
 }
 
 // clear history button
