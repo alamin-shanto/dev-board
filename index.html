@@ -77,7 +77,8 @@
             <!-- box2 starts here -->
 
             <div
-              class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-6 max-w-[700px] flex-[2]"
+              class="bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-6 max-w-[700px] flex-[2] cursor-pointer"
+              onclick="window.location.href='./blog.html' "
             >
               <img src="./assets/board.png" alt="" />
               <p class="text-white font-medium text-2xl">
@@ -288,10 +289,14 @@
             <p class="text-black">Activity Log</p>
           </div>
           <div class="text-center">
-            <button class="btn border-none text-white bg-[#3752FD] mt-5">
+            <button
+              onclick="clearHistory()"
+              class="btn border-none text-white bg-[#3752FD] mt-5"
+            >
               Clear History
             </button>
           </div>
+          <div id="activityLog" class="text-black mt-3"></div>
         </div>
       </div>
     </main>

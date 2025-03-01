@@ -40,8 +40,25 @@ function updateCount(event) {
 
   completedButtons++;
   if (completedButtons === 6) {
-    alert("Congrats! All task completed");
+    alert("Congrats! All tasks completed");
   }
+
+  // get cards h4 & add in the log
+
+  let cardTitle =
+    button.parentElement.parentElement.parentElement.querySelector(
+      "h4"
+    ).innerText;
+
+  let time = new Date().toLocaleTimeString();
+
+  document.getElementById(
+    "activityLog"
+  ).innerHTML += `<p class="my-2"> You have completed the task <b> ${cardTitle} </b> at ${time} </p>`;
 }
 
 // clear history button
+
+function clearHistory() {
+  document.getElementById("activityLog").innerHTML = "";
+}
