@@ -15,7 +15,7 @@ document.getElementById("week_day").textContent = week;
 document.getElementById("date").textContent = `${month} ${day} ${year}`;
 
 // addcount & subcount
-
+let completedButtons = 0;
 function updateCount(event) {
   alert("Board updated successfully");
   let addCount = document.getElementById("addCount");
@@ -35,6 +35,13 @@ function updateCount(event) {
     "cursor-not-allowed",
     "pointer-events-none"
   );
+
+  // when all 6 button completed give this alert
+
+  completedButtons++;
+  if (completedButtons === 6) {
+    alert("Congrats! All task completed");
+  }
 }
 
 // clear history button
