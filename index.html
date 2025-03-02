@@ -24,7 +24,7 @@
   <body class="p-6">
     <!-- header section starts here -->
     <header
-      class="max-w-[1440px] mx-auto flex justify-between bg-white py-7 px-6 items-center rounded-2xl"
+      class="max-w-[1440px] mx-auto flex flex-col lg:flex-row justify-center lg:justify-between bg-white py-7 px-6 items-center rounded-2xl"
     >
       <div class="header-div1 flex gap-5">
         <img src="./assets/logo.png" alt="" />
@@ -32,7 +32,7 @@
           Dev<span class="font-bold">Board</span>
         </p>
       </div>
-      <div class="header-div2 flex gap-10">
+      <div class="header-div2 flex gap-10 mt-5 lg:mt-0">
         <p
           class="font-bold text-3xl text-black flex justify-center gap-6 items-center bg-[#F4F7FF] border rounded-full p-3"
         >
@@ -52,12 +52,12 @@
 
     <main class="max-w-[1440px] mx-auto mt-5">
       <!-- parent div -->
-      <div class="flex gap-6 w-full">
+      <div class="lg:flex gap-6 w-full">
         <!-- left div -->
 
         <div class="p-6 bg-white flex-[3] rounded-2xl">
           <!-- top div -->
-          <div class="flex justify-evenly gap-6">
+          <div class="lg:flex justify-evenly gap-6 space-y-5 lg:space-y-0">
             <!-- box1 starts here -->
             <div
               class="flex items-center gap-5 bg-[#F4F7FF] p-6 max-w-[350px] flex-[1] justify-center rounded-xl"
@@ -104,7 +104,9 @@
           </div>
 
           <!-- bottom (grid) div -->
-          <div class="grid grid-cols-3 mt-16 gap-9 buttons-to-disable">
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-3 mt-16 gap-9 buttons-to-disable"
+          >
             <!-- card1 -->
             <div class="bg-[#F4F7FF] p-6 space-y-4 rounded-2xl">
               <div class="text-[#00303C] space-y-4">
@@ -283,7 +285,7 @@
         </div>
         <!-- right div -->
 
-        <div class="bg-white flex-[1] p-6 rounded-2xl">
+        <div class="bg-white flex-[1] p-6 rounded-2xl mt-5 lg:mt-0">
           <div class="font-medium text-xl flex justify-center gap-4">
             <img src="./assets/activity.png" alt="" />
             <p class="text-black">Activity Log</p>
