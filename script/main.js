@@ -50,7 +50,7 @@ function updateCount(event) {
       "h4"
     ).innerText;
 
-  let time = new Date().toLocaleTimeString("en - US", { hour12: true });
+  let time = new Date().toLocaleTimeString();
 
   document.getElementById(
     "activityLog"
